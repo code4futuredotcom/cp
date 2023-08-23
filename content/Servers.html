@@ -1,0 +1,386 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>cp</title>
+        <meta charset="utf-8">
+<meta property="head" content="H2">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <!-- for Wink3 客製化關閉 -->
+        <!--
+        <link rel="stylesheet" type="text/css" href="./../cmsimde/static/winkPlayer.css" />
+        <script type="text/javascript" src="./../cmsimde/static/winkPlayer.js"></script>
+        -->
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPowerShell.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushMojo.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushRust.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container">
+                <div class="row align-items-center">
+                <h1>cp</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">cp</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">SMap</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li class='has-children'><a href='About.html'>About</a><ul class='dropdown'><li><a href='計算機程式.html'>計算機程式</a><li><a href='Haskell.html'>Haskell</a><li><a href='Lambda.html'>Lambda</a><li><a href='RoboDK.html'>RoboDK</a><li><a href='Networks.html'>Networks</a><li><a href='Replit_env.html'>Replit_env</a><li><a href='Servers.html'>Servers</a><li><a href='Blender.html'>Blender</a><li><a href='Mojo.html'>Mojo</a><li><a href='AI.html'>AI</a></li></ul><li><a href='Projects.html'>Projects</a><li><a href='mind-map.html'>mind-map</a><li class='has-children'><a href='cp.html'>cp</a><ul class='dropdown'><li class='has-children'><a href='Email.html'>Email</a><ul class='dropdown'><li><a href='E_why.html'>E_why</a><li><a href='E_how.html'>E_how</a><li><a href='E_what.html'>E_what</a><li><a href='E_when.html'>E_when</a><li><a href='E_who.html'>E_who</a><li><a href='E_where.html'>E_where</a></li></ul><li class='has-children'><a href='Onedrive.html'>Onedrive</a><ul class='dropdown'><li><a href='O_why.html'>O_why</a><li><a href='O_how.html'>O_how</a><li><a href='O_what.html'>O_what</a><li><a href='O_when.html'>O_when</a><li><a href='O_who.html'>O_who</a><li><a href='O_where.html'>O_where</a></li></ul><li class='has-children'><a href='Github.html'>Github</a><ul class='dropdown'><li><a href='G_why.html'>G_why</a><li><a href='G_how.html'>G_how</a><li><a href='G_what.html'>G_what</a><li><a href='G_when.html'>G_when</a><li><a href='G_who.html'>G_who</a><li><a href='G_where.html'>G_where</a></li></ul><li class='has-children'><a href='Replit.html'>Replit</a><ul class='dropdown'><li><a href='R_why.html'>R_why</a><li><a href='R_how.html'>R_how</a><li><a href='R_what.html'>R_what</a><li><a href='R_when.html'>R_when</a><li><a href='R_who.html'>R_who</a><li><a href='R_where.html'>R_where</a></li></ul><li class='has-children'><a href='Python.html'>Python</a><ul class='dropdown'><li><a href='P_why.html'>P_why</a><li><a href='P_how.html'>P_how</a><li><a href='P_what.html'>P_what</a><li><a href='P_when.html'>P_when</a><li><a href='P_who.html'>P_who</a><li><a href='P_where.html'>P_where</a></li></ul><li class='has-children'><a href='Javascript.html'>Javascript</a><ul class='dropdown'><li><a href='J_why.html'>J_why</a><li><a href='J_how.html'>J_how</a><li><a href='J_what.html'>J_what</a><li><a href='J_when.html'>J_when</a><li><a href='J_who.html'>J_who</a><li><a href='J_where.html'>J_where</a></li></li></ul></ul><li><a href='Brython.html'>Brython</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">Replit_env << <a href='Replit_env.html'>Previous</a> <a href='Blender.html'>Next</a> >> Blender<br /><h1>Servers</h1>
+<p>未能來電啟動的 servers:</p>
+<p>10_16_16::4, 5, 9, 11, 13, 15</p>
+<p>0811:2:0:cd02, 0811:2:0:cd02, db73::1</p>
+<p><a href="https://youtu.be/1UX1-BJD3Tk">https://youtu.be/1UX1-BJD3Tk</a> (黃敬群 keynote)</p>
+<p><a href="https://youtu.be/FLnzxRMxo_w">https://youtu.be/FLnzxRMxo_w</a> (Dcard keynote)</p>
+<p><a href="https://youtu.be/VqOa35-1Y4A">https://youtu.be/VqOa35-1Y4A</a> (台灣資訊教育探討)</p>
+<p>administrator start cmd</p>
+<p>net user /add username *</p>
+<p>key in password for new username</p>
+<p><a href="http://wcm.cycu.org:88/github/wcm2023/content/Servers.html">http://wcm.cycu.org:88/github/wcm2023/content/Servers.html</a></p>
+<p>s1511 必須在 /etc/default/stunnel4 中加入 ENABLED=1</p>
+<p>sudo /etc/init.d/stunnel4 restart 可重新啟動 stunnel</p>
+<p>建立 stunnel.conf</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"># 想要透過程式方法, 建立 stunnel.conf 設定檔案, 其中分別從 9001 到 9300, 8001 到 8300
+first = '''
+[https]
+accept = cad2.cycu.org:
+'''
+second = '''
+connect = 127.0.0.1:
+'''
+third = '''cert = /etc/letsencrypt/live/cad2.cycu.org/fullchain.pem
+key = /etc/letsencrypt/live/cad2.cycu.org/privkey.pem
+TIMEOUTclose = 0
+'''
+list8 =[str(i) for i  in range(8001, 8301)]
+list9=[str(i) for i  in range(9001, 9301)]
+ 
+setup = ""
+for i in zip(list8, list9):
+    #print(i)
+    print(i[0], i[1])
+    setup += first.strip() + i[0] + "\n" + second.strip() + i[1] + "\n" + third
+ 
+with open("stunnel.conf", "w") as f:
+    f.write(setup)</pre>
+<p>假如要以自己架設的伺服器來取代 Replit, 第一步是如何在 Ubuntu 22.04 Server 上建立每位學員的帳號. 使用 <a href="https://manpages.ubuntu.com/manpages/xenial/man8/newusers.8.html">newusers</a> 指令, 配合建立一個包含帳號、密碼、uid、gid、comment、home dir 以及 shell (/bin/bash) 資料的 users.txt, 然後使用 sudo newusers users.txt 就可以完成所有學員帳號的建立. 但必須要先取得初始 uid, 也就是列出現有帳號的所屬 uid, 然後才能設定後續代號的 user id.</p>
+<p>列出現有帳號 uid 的指令為: cut -d: -f1,3 /etc/passwd</p>
+<p>表示要從 /etc/passwd 檔案, 以 : 符號分割檔案, 然後只取出第一與第三欄位的資料. 假如傳回:</p>
+<pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false">root:0
+daemon:1
+bin:2
+sys:3
+sync:4
+games:5
+man:6
+lp:7
+mail:8
+news:9
+uucp:10
+proxy:13
+www-data:33
+backup:34
+list:38
+irc:39
+gnats:41
+nobody:65534
+_apt:100
+systemd-network:101
+systemd-resolve:102
+messagebus:103
+systemd-timesync:104
+pollinate:105
+sshd:106
+syslog:107
+uuidd:108
+tcpdump:109
+tss:110
+landscape:111
+usbmux:112
+tcexam:1000
+lxd:999
+postgres:113
+tcexamdb:1001
+cad2022:1002
+stunnel4:998
+cd1:1002
+cd3:1003</pre>
+<p>表示新建帳號的 uid 與 gid 就可以從 1004 開始, 然後連續增量後配給新的用戶.</p>
+<p>建立各課程對應的 Ubuntu 帳號與密碼檔案:</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"># 導入亂數模組
+import random
+# 導入字串模組
+import string
+# 利用 def 關鍵字定義函式
+# 函式的輸入變數可以設定初始值
+def password_generator(size=4, chars=string.ascii_lowercase + string.digits):
+    # 函式內以多行註解說明函式功能
+    """Generate random password
+    """
+    # 利用 return 關鍵字將所產生的亂數字串傳回
+    return ''.join(random.choice(chars) for _ in range(size))
+# 建立一個變數與隨後的字串對應
+pass_string = "abcdefghkmnpqrstuwxyz123456789"
+cp_num = ["0747", "0761"]
+cad_num = ["0773", "0786"]
+def gen_acc_pass(course, course_num):
+    stud_list =[]
+    for num in course_num:
+        url = "https://nfu.cycu.org/?semester=1111&amp;courseno=" + num + "&amp;column=True"
+        class_list = open(url).read().split("\n")[:-1]
+        stud_list += class_list
+        #print(stud_list)
+    for stud_num in stud_list:
+        password = password_generator(4, pass_string)
+        #print(password)
+        account = course + stud_num
+        #print(account)
+        print(stud_num + "\t" + account + "\t" + password)
+gen_acc_pass("cp", cp_num)
+gen_acc_pass("cad", cad_num)</pre>
+<p>create_users_txt.py:</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">with open("2022_fall_ubuntu_account_pass.txt") as f:
+    data = f.readlines()
+# newusers format:  
+# pw_name:pw_passwd:pw_uid:pw_gid:pw_gecos:pw_dir:pw_shell
+# uid starts from 1002
+uid_starts = 1001
+users = ""
+send = ""
+ 
+for i in data:
+    #stud_num \t account \t password \n
+    stud = i.split("\t")
+    stud_num = stud[0]
+    account = stud[1]
+    password = stud[2].rstrip()
+    uid_starts += 1
+    uid = str(uid_starts)
+    gid = uid
+    gecos = account
+    home_dir = "/home/" + account
+    shell = "/bin/bash"
+    #print(stud_num, account, password)
+    users += account + ":" + password + ":" + uid + ":" + gid + ":" + gecos + ":" + home_dir + ":" + shell + "\n"
+    send += stud_num + ":" + account + ":" + password + "\n"
+ 
+with open("users.txt", "w", encoding="utf-8", newline='\n') as f:
+        f.write(users)
+ 
+with open("send.txt", "w", encoding="utf-8", newline='\n') as f:
+        f.write(send)</pre>
+<p>假如沒有採用 newline='\n', 在 Windows 寫檔案所使用的跳行符號, 以 sftp 傳到 Ubuntu 時將會因為 shell 並非 /bin/bash 而是加上 ^M$ 的錯誤 shell 資料, 導入用戶無法 login.</p>
+<p>若要修正跳行符號錯誤, 可以採用:</p>
+<p>change_shell.py</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import os
+with open("users.txt", "r", encoding="UTF-8") as f:
+    data = f.read().splitlines()
+for i in data:
+    account = i.split(":")[0]
+    print(account)
+    os.system("sudo chsh -s /bin/bash " + account)</pre>
+<p>當執行上列程式時, 為避免在程式中列出管理者密碼, 可以編輯 /etc/sudoers 並加入:</p>
+<pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false"># only require a password once every 60 minutes
+Defaults timestamp_timeout=60</pre>
+<p>可以讓 sudo python3 change_shell.py 執行時無需輸入管理者密碼.</p>
+<p>當伺服器運作期程結束, 可以在 /etc/sudoers 已經納入 timeout 設定後, 利用 python3 del_users.py 刪除對應的使用者與其用戶目錄.</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import subprocess
+ 
+"""
+/etc/sudoers
+vi /etc/sudoers
+use w! to write the read only file
+add the following to sudoers
+ 
+# only require a password once every 60 minutes
+Defaults timestamp_timeout=60
+ 
+use 
+sudo python3 del_users.py
+to delete users and their home directories
+"""
+ 
+with open("users.txt", "r") as f:
+    data = f.read().splitlines()
+#print(data)
+stud_list = []
+for i in data:
+    stud_num = i.split(":")[0]
+    #print(stud_num)
+    stud_list.append(stud_num)    
+for user in stud_list:
+    try:
+        subprocess.run(["sudo", "userdel", "-r", user], check=True)
+        print(str(user) + " deleted!")
+        subprocess.run(["sudo", "rm", "-rf", f"/home/{user}"], check=True)
+        print(str(user) + " home deleted!")
+    except subprocess.CalledProcessesError:
+        print(str(user) + " is not deleted!")</pre>
+<p>其中的 users.txt 就是前面用來建立用戶帳號的設定檔案.</p>
+<br />Replit_env << <a href='Replit_env.html'>Previous</a> <a href='Blender.html'>Next</a> >> Blender</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
